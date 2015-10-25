@@ -14,7 +14,7 @@ For Swift, add these in the bridging-header too:
 ![alt tag](https://raw.github.com/newcseanc/CSPickerTextField/master/Assets/Swift-1.png)
 
 
-_2. Create a UITextField in storyboard and make its class CSPickerTextField, or you can create it programmatically too.
+_2. Create a UITextField in storyboard and make its class CSPickerTextField.
 
 
 _3. Make your view controller confirms to CSPickerTextFieldDelegate, set your_text_field.pickerDelegate = self, and implements the delegate methods.
