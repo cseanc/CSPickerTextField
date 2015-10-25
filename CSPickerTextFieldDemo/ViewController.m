@@ -5,10 +5,16 @@
 //  Created by Sean on 10/25/15.
 //  Copyright © 2015 Sean. All rights reserved.
 //
-
+#import "CSPickerTextField.h"
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    NSMutableArray *fruits;
+    NSMutableArray *colors;
+}
+
+@property (weak, nonatomic) IBOutlet CSPickerTextField *demoTextField;
+@property (weak, nonatomic) IBOutlet CSPickerTextField *demoTextField2;
 
 @end
 
@@ -16,12 +22,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    fruits = [[NSMutableArray alloc] initWithObjects: @"Peach", @"Apple", @"Lemon", @"Guava", @"Dragon Fruit", nil];
+    colors = [[NSMutableArray alloc] initWithObjects: @"White", @"Red", @"Yellow", @"Green", @"Black", nil];
+    _demoTextField.pickerDelegate = self;
+    _demoTextField2.pickerDelegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)numberOfPickerRowInTextField:(UITextField *)textField {
+    if (textField == _demoTextField) {
+        return fruits.count;
+    } else {
+        return colors.count;
+    }
+}
+
+- (NSMutableArray *)titlesForPickerRowInTextField:(UITextField *)textField {
+    if (textField == _demoTextField) {
+        return fruits;
+    } else {
+        return colors;
+    }
 }
 
 @end

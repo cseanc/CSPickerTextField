@@ -13,6 +13,7 @@
 		1439C5C51BDD1E2600B79378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1439C5C31BDD1E2600B79378 /* Main.storyboard */; };
 		1439C5C71BDD1E2600B79378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1439C5C61BDD1E2600B79378 /* Assets.xcassets */; };
 		1439C5CA1BDD1E2600B79378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1439C5C81BDD1E2600B79378 /* LaunchScreen.storyboard */; };
+		1439C5D71BDD206100B79378 /* CSPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1439C5D61BDD206100B79378 /* CSPickerTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		1439C5C61BDD1E2600B79378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1439C5C91BDD1E2600B79378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1439C5CB1BDD1E2600B79378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1439C5D51BDD1FA100B79378 /* CSPickerTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CSPickerTextField.h; path = CSPickerTextField/CSPickerTextField.h; sourceTree = "<group>"; };
+		1439C5D61BDD206100B79378 /* CSPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSPickerTextField.m; path = CSPickerTextField/CSPickerTextField.m; sourceTree = "<group>"; };
+		1439C5FD1BDD4C5500B79378 /* CSPickerTextFieldDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CSPickerTextFieldDelegate.h; path = CSPickerTextField/CSPickerTextFieldDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		1439C5AE1BDD1E2600B79378 = {
 			isa = PBXGroup;
 			children = (
+				1439C5D11BDD1E3200B79378 /* CSPickerTextField */,
 				1439C5B91BDD1E2600B79378 /* CSPickerTextFieldDemo */,
 				1439C5B81BDD1E2600B79378 /* Products */,
 			);
@@ -77,6 +82,16 @@
 				1439C5BB1BDD1E2600B79378 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1439C5D11BDD1E3200B79378 /* CSPickerTextField */ = {
+			isa = PBXGroup;
+			children = (
+				1439C5FD1BDD4C5500B79378 /* CSPickerTextFieldDelegate.h */,
+				1439C5D51BDD1FA100B79378 /* CSPickerTextField.h */,
+				1439C5D61BDD206100B79378 /* CSPickerTextField.m */,
+			);
+			name = CSPickerTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +167,7 @@
 				1439C5C21BDD1E2600B79378 /* ViewController.m in Sources */,
 				1439C5BF1BDD1E2600B79378 /* AppDelegate.m in Sources */,
 				1439C5BC1BDD1E2600B79378 /* main.m in Sources */,
+				1439C5D71BDD206100B79378 /* CSPickerTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +316,7 @@
 				1439C5D01BDD1E2600B79378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
