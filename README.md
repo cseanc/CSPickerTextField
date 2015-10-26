@@ -17,7 +17,7 @@ For Swift, add these in the bridging-header too:
 _2. Create a UITextField in storyboard and make its class CSPickerTextField.
 
 
-_3. Make your view controller confirms to CSPickerTextFieldDelegate, set your_text_field.pickerDelegate = self, and implements the delegate methods.
+_3. Make your view controller conforms to CSPickerTextFieldDelegate, set your_text_field.pickerDelegate = self, and implements the delegate methods.
 
 
 
