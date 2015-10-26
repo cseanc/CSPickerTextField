@@ -41,7 +41,7 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return [pickerDelegate numberOfPickerRowInTextField:_textField];
+    return [[pickerDelegate titlesForPickerRowInTextField:_textField] count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {

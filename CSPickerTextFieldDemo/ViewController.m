@@ -5,6 +5,8 @@
 //  Created by Sean on 10/25/15.
 //  Copyright © 2015 Sean. All rights reserved.
 //
+
+
 #import "CSPickerTextField.h"
 #import "ViewController.h"
 
@@ -26,14 +28,6 @@
     colors = [[NSMutableArray alloc] initWithObjects: @"White", @"Red", @"Yellow", @"Green", @"Black", nil];
     _demoTextField.pickerDelegate = self;
     _demoTextField2.pickerDelegate = self;
-}
-
-- (NSInteger)numberOfPickerRowInTextField:(UITextField *)textField {
-    if (textField == _demoTextField) {
-        return fruits.count;
-    } else {
-        return colors.count;
-    }
 }
 
 - (NSMutableArray *)titlesForPickerRowInTextField:(UITextField *)textField {

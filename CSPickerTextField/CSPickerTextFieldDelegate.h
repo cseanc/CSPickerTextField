@@ -10,7 +10,6 @@
 
 @protocol CSPickerTextFieldDelegate <NSObject>
 
-- (NSInteger)numberOfPickerRowInTextField:(UITextField *)textField;
 - (NSMutableArray *)titlesForPickerRowInTextField:(UITextField *)textField;
 
 @end
